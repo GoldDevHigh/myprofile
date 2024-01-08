@@ -10,6 +10,7 @@ import ModalSixContent from './modal/ModalSixContent';
 import ModalSevenContent from './modal/ModalSevenContent';
 import ModalEightContent from './modal/ModalEightContent';
 import ModalNineContent from './modal/ModalNineContent';
+import ModalTenContent from './modal/ModalTenContent';
 
 const Portfolio = () => {
 	const [ isOpen, setIsOpen ] = useState(false);
@@ -21,6 +22,7 @@ const Portfolio = () => {
 	const [ isOpen7, setIsOpen7 ] = useState(false);
 	const [ isOpen8, setIsOpen8 ] = useState(false);
 	const [ isOpen9, setIsOpen9 ] = useState(false);
+	const [ isOpen10, setIsOpen10 ] = useState(false);
 
 	function toggleModalOne() {
 		setIsOpen(!isOpen);
@@ -48,6 +50,9 @@ const Portfolio = () => {
 	}
 	function toggleModalNine() {
 		setIsOpen9(!isOpen9);
+	}
+	function toggleModalTen() {
+		setIsOpen10(!isOpen10);
 	}
 
 	return (
@@ -369,6 +374,42 @@ const Portfolio = () => {
 								</div>
 							</Modal>
 							{/* End  ModalNineContent */}
+						</li>
+
+						<li
+							className="direction-reveal"
+							data-aos="fade-right"
+							data-aos-duration="1200"
+							data-aos-delay="200"
+						>
+							<figure className="direction-reveal__card" onClick={toggleModalTen}>
+								<img src="img/projects/joystream.png" alt="unity" />
+								<div className=" hover-content-wrapper">
+									<span className="content-title">Video Stream Project</span>
+								</div>
+							</figure>
+
+							{/* Start ModalTenContent */}
+							<Modal
+								isOpen={isOpen10}
+								onRequestClose={toggleModalTen}
+								contentLabel="My dialog"
+								className="custom-modal dark"
+								overlayClassName="custom-overlay dark"
+								closeTimeoutMS={500}
+							>
+								<div>
+									<button className="close-modal" onClick={toggleModalTen}>
+										<img src="/img/cancel.svg" alt="close icon" />
+									</button>
+									{/* End close icon */}
+
+									<div className="box_inner portfolio">
+										<ModalTenContent />
+									</div>
+								</div>
+							</Modal>
+							{/* End  ModalTenContent */}
 						</li>
 					</ul>
 				</TabPanel>
@@ -890,6 +931,42 @@ const Portfolio = () => {
 							</Modal>
 							{/* End  ModalEightContent */}
 						</li>
+
+						<li
+							className="direction-reveal"
+							data-aos="fade-right"
+							data-aos-duration="1200"
+							data-aos-delay="200"
+						>
+							<figure className="direction-reveal__card" onClick={toggleModalTen}>
+								<img src="img/projects/joystream.png" alt="unity" />
+								<div className=" hover-content-wrapper">
+									<span className="content-title">Video Stream Project</span>
+								</div>
+							</figure>
+
+							{/* Start ModalTenContent */}
+							<Modal
+								isOpen={isOpen10}
+								onRequestClose={toggleModalTen}
+								contentLabel="My dialog"
+								className="custom-modal dark"
+								overlayClassName="custom-overlay dark"
+								closeTimeoutMS={500}
+							>
+								<div>
+									<button className="close-modal" onClick={toggleModalTen}>
+										<img src="/img/cancel.svg" alt="close icon" />
+									</button>
+									{/* End close icon */}
+
+									<div className="box_inner portfolio">
+										<ModalTenContent />
+									</div>
+								</div>
+							</Modal>
+							{/* End  ModalTenContent */}
+						</li>
 					</ul>
 				</TabPanel>
 				{/* End DAPP Project */}
@@ -935,6 +1012,7 @@ const Portfolio = () => {
 					</ul>
 				</TabPanel>
 				{/* End UINTY Design Project*/}
+				
 			</div>
 		</Tabs>
 	);
