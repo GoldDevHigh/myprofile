@@ -1,21 +1,17 @@
 import React from "react";
 import HomeDark from "../views/all-home-version/HomeDark";
 import NotFound from "../views/NotFound";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import ScrollTopBehaviour from "../components/ScrollTopBehaviour";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-const Routes = () => {
+const ControlRouter = () => {
   return (
-    <>
-      <Router>
-        <ScrollTopBehaviour />
-        <Switch>
-          <Route exact path="/" component={HomeDark} />
-          <Route component={NotFound} />
-        </Switch>
-      </Router>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomeDark />} />
+        <Route element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
-export default Routes;
+export default ControlRouter;

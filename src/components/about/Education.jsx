@@ -2,16 +2,10 @@ import React from 'react';
 
 const educationContent = [
 	{
-		year: '2015',
+		year: '2010',
 		degree: 'Bachelor in Computer Science',
-		institute: 'Shasta College',
+		institute: 'Liaoning University',
 		details: 'Computer Analysis, Digital computing, Data Management, AI'
-	},
-	{
-		year: '2019',
-		degree: 'Diploma',
-		institute: 'Coursera',
-		details: 'Decentralized Applications (Dapps)'
 	}
 ];
 

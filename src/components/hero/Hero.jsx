@@ -5,12 +5,11 @@ import Index from "../../components/about/index";
 const heroContent = {
   heroImage: "img/hero/dark.jpg",
   heroMobileImage: "img-mobile",
-  heroTitleName: "Jose Ducque",
-  heroDesignation: "Full-stack Web Developer",
-  heroDescriptions: `I'm a US based full-stack developer with interests in web3 technology,
-   I am passionate about 
-  building excellent software that improves the lives of those
-  around me.`,
+  heroTitleName: "Stuart Lee",
+  heroDesignation: "WEB & WEB3 Developer",
+  heroDescriptions: `I am a senior developer with a passion for Javascript, typescript & blockchain with several years of experience. I am proactive and detail-oriented.
+I am meticulous in my coding practice and always look for the best practice.
+The unique thing I have is flexibility and creativity. I have what the new environment requires and quickly adapt to new situations. I am a fast and dedicated learner and always try to keep up with the latest technologies.`,
   heroBtn: "more about me",
 };
 
